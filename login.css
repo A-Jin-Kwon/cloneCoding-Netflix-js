@@ -1,0 +1,140 @@
+body{
+    background: rgba(0, 0, 0, 0.7) url("https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/20daee97-3054-4bd6-9088-13c2fefc1a54/KR-ko-20230320-popsignuptwoweeks-perspective_alpha_website_large.jpg") no-repeat center/cover;
+    background-blend-mode: darken;
+}
+
+.login-header{
+    height: 90px;
+}
+.netflix-logo{
+    margin-left: 3%;
+}
+.netflix-logo img{
+    width: 200px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.login-box{
+    padding: 60px 68px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    min-height: 550px;
+    margin: 0 auto 100px;
+    align-items: center;
+}
+.login-box h1{
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+.login-box p{
+    color: #8c8c8c;
+}
+.login-box label{
+    color: #b3b3b3;
+}
+.login-box input{
+    background-color: #333;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 16px;
+    border: none;
+}
+.login-box button{
+    background-color: #e50914;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.login-button-bottom{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+.login-button-bottom a{
+    margin-left: auto;
+    color: #8c8c8c;
+    text-decoration-line: none;
+    position: relative;
+    bottom: 4px;
+}
+.login-button-bottom input{
+    color: #8c8c8c;
+    width: 15px;
+    height: 15px;
+    accent-color: #8c8c8c;
+    position: relative;
+    top: 1.5px;
+}
+
+.sign-now{
+    color: #737373;
+    font-size: 16px;
+    margin: 80px 0 16px;
+}
+.sign-now a{
+    color: white;
+    font-weight: 400;
+    text-decoration-line: none;
+}
+.check-robot{
+    color: #8c8c8c;
+    font-size: 13px;
+    text-align: left;
+    line-height: 17px;
+}
+.check-robot a{
+    text-decoration-line: none;
+    color: #0071eb;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    color: grey;
+    padding-bottom: 50px;
+}
+footer a{
+    text-decoration-line: none;
+    color: grey;
+}
+footer .call-number{
+    margin-bottom: 30px;
+}
+
+.footer{
+    width: 50%;
+    margin: auto;
+    padding: 30px 0;
+}
+.footer select{
+    background-color: black;
+    color: grey;
+    border: solid 1px #333;
+    padding: 10px 30px;
+    margin: 30px 0;
+}
+.footer ul{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, auto));
+    row-gap: 20px;
+}
+.footer-info{
+    line-height: 1em;
+    font-size: 0.75em;
+}

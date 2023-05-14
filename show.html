@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 - 넷플릭스</title>
+
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./show.css">
+</head>
+<body>
+    <!--Connecting axios-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <header>
+        <nav id="navbar">
+            <div class="header-left">
+                <img onclick="location.href='./main.html'" class="netflix-logo" src="https://assets.nflxext.com/en_us/layout/ecweb/common/logo-shadow2x.png" alt="Netflix-logo" width="50px" height="30px">
+                <ul>
+                    <li>홈</li>
+                    <li>시리즈</li>
+                    <li>영화</li>
+                    <li>NEW! 요즘 대세 콘텐츠</li>
+                    <li>내가 찜한 콘텐츠</li>
+                    <li>언어별로 찾아보기</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <a href="#">
+                        키즈
+                    </a>
+                </div>
+                <div>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <img src="http://occ-0-988-993.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABcLF5_vuAxFOlLI0qp1XhUBLJfb97ZZf6U2lXhULWC6enjd7X5Y5OqlhZ6LhyM5l2aW3UcWj6_QyYnOdRfemo1wWcLYfx3M.png?r=c5e" alt="profile" width="32" height="32">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-banner">
+        <div class="banner-info">
+            <img src="https://occ-0-988-993.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABeunBr68M-9pjJfsOwoTzXgLawAeFwYbgr9PBobkI03ldey7hzjM6n3JviFKjKpuewrgwM4N6M1MqbmrdBkuqedLVB4H6LNiGgkirx_vGRz_58Hx8gdpmIZWVkJlbM2RUCBNHS_B5j5H0NJJD_WhN4JnAVvgr8H_91vVYvVGZ3VX-Ju3Z72wsw.webp?r=540">
+            <p>
+                뉴욕의 작은 마을에서, 설명하기 어려운 사건들이 벌어진다. 범인은 무엇에 사로잡힌 걸까. 형사는 무엇에 집착하는 걸까. 진실을 향해 가는 길은 더없이 어둡기만 하다.
+            </p>
+            <div class="btns">
+                <button class="btn btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                    재생
+                </button>
+                <button class="btn btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                    상세 정보
+                </button>
+            </div>
+        </div>
+
+        <div class="banner-wrapper">
+        </div>
+    </div>
+
+    <div class="space-container"></div>
+
+    <div class="movie-row">
+        <h2>
+            넷플릭스 인기 콘텐츠
+        </h2>
+        <div class="container">
+            <div class="handle handle-left"></div>
+            <div class="slide movies-popular"></div>
+            <div class="handle handle-right"></div>
+        </div>
+    </div>
+
+    <div class="movie-row">
+        <h2>
+            인기 드라마
+        </h2>
+        <div class="container">
+            <div class="handle handle-left"></div>
+            <div class="slide tvs-popular"></div>
+            <div class="handle handle-right"></div>
+        </div>
+    </div>
+
+    <div class="movie-row">
+        <h2>
+            비평가 호평 영화
+        </h2>
+        <div class="container">
+            <div class="handle handle-left"></div>
+            <div class="slide movies-top-rated"></div>
+            <div class="handle handle-right"></div>
+        </div>
+    </div>
+
+    <div class="movie-row">
+        <h2>
+            최신 상영작
+        </h2>
+        <div class="container">
+            <div class="handle handle-left"></div>
+            <div class="slide movies-now-playing"></div>
+            <div class="handle handle-right"></div>
+        </div>
+    </div>
+
+
+
+    <!--Connecting JS-->
+    <script type="text/javascript" src="./navbar.js"></script>
+    <script type="text/javascript" src="./show.js"></script>
+</body>
+</html>
